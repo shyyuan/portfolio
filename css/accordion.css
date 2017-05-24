@@ -1,0 +1,126 @@
+
+.accordion {
+  width: 30vw;
+  min-width: 320px;
+  overflow: hidden;
+  margin: auto;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+/* the '+' means the label directly after the input */
+.accordion input:checked + label {
+  background: #3399cc;
+}
+/* remove the checkbox in front-end visidualy, but not the function */
+.accordion input {
+  display: none;
+}
+/* Give the label some styling */
+.accordion input + label {
+  /*Display, color, position, layout*/
+  display: block;
+  border-bottom: 1px solid #3399cc;
+  position: relative;
+  background: #49b1e5;
+  padding: 10px;
+
+  /*Pointer*/
+  cursor: pointer;
+
+  /*Font*/
+  font-weight: bold;
+  color: white;
+
+  /*This is so that when the background color changes, it will happen happen slowly*/
+  transition: background 0.75s;
+  -moz-transition: background 0.75s;
+  -o-transition: background 0.75s;
+  -webkit-transition: background 0.75s;
+}
+
+/*Make the background color change when someone hovers over the label*/
+.accordion input + label:hover {
+  background: #3399cc;
+}
+
+/* Styling the Section div */
+.accordion .section {
+  /*background & font styling*/
+  background: white;
+  color: #AAA;
+  /*space for the text to breathe*/
+  padding: 0 10px;
+  /*transitioning between states will look smoother*/
+  transition: height 0.75s, opacity 0.75s;
+  -moz-transition: height 0.75s, opacity 0.75s;
+  -o-transition: height 0.75s, opacity 0.75s;
+  -webkit-transition: height 0.75s, opacity 0.75s;
+  /* "hide" the sections */
+  opacity: 0;
+  height: 0;
+}
+
+/* Remove the gaps in between the labels which is being caused by the margins on the dl elements */
+dl {
+  margin: 0;
+}
+
+/* add styling to the section if the check box is selected. We need to also specify the label in our selector because the checkbox itself is hidden and the user will be clicking the label. */
+.accordion input:checked + label + .section {
+  display: block;
+  overflow: auto;
+  height: 300px;
+  opacity: 1;
+  background: white;
+  color: #333;
+}
+/* Add icon */
+.accordion input + label:after {
+  /*content: "\f067";*/
+  content: '\f0f5';
+  font-family: 'FontAwesome';
+  font-size:14px;
+  position: absolute;
+  top: 14px;
+  right: 10px;
+  transition: 0.75s;
+  -moz-transition: transform 0.75s;
+  -o-transition: transform 0.75s;
+  -webkit-transition: transform 0.75s;
+}
+/* Rotate the icon if clicked */
+.accordion input:checked + label:after {
+  transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+}
+/*
+.accordion input + label:after {
+  transition: 0.75s;
+  }*/
+
+  /* Scrollbar styling (only in webkit)*/
+
+  .accordion ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background-color: #85c2e0;
+  }
+
+  .accordion ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+  }
+  
+a: {
+  color: blue;
+}
+a: link {
+  color: inherit;
+}
+.prjLink:hover {
+  cursor: pointer;
+}
+.prjDD {
+  padding: .5em 0 1em 0;
+}
