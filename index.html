@@ -2,22 +2,25 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Portfolio</title>
-
+    <title>Sheila Yuan</title>
+    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/accordion.css">
+    <link rel="icon" href="images/favicon.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="images/favicon.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="images/favicon.png" sizes="48x48" type="image/png">
+    <link rel="icon" href="images/favicon.png" sizes="62x62" type="image/png">
   </head>
   <body>
 
     <header>
-      <div class="topImg">
-      </div>
+      <div class="topImg"></div>
       <nav>
-        <h1>Sheila Yuan</h1>
+          <h1>Sheila Yuan</h1>
         <ul>
-          <li>Home</li>
+          <li><a href="#" id="homeLink">Home</a></li>
           <li>Work Experiences</li>
-          <li>Personal Projects</li>
+          <li><a href="#" id="projectsLink">Personal Projects</a></li>
         </ul>
       </nav>
     </header>
@@ -41,12 +44,14 @@
           <label for="section1">Project 1: Memory Game</label>
           <div class="section">
             <dl>
-              <dt>Description</dt>
-                <dd class="prjDD">A memory board game that is build with HTML, CSS, JavaScript and jQuery.</dd>
-              <dt>GitHub Repository</dt>
-                <dd class="prjDD"><a class="prjLink" href="https://github.com/shyyuan/WDIR-Project-1" target="_blank">https://github.com/shyyuan/WDIR-Project-1</a></dd>
-              <dt>Live Siste</dt>
-                <dd class="prjDD"><a  class="prjLink" href="https://shyyuan.github.io/WDIR-Project-1" target="_blank">https://shyyuan.github.io/WDIR-Project-1</a></dd>
+              <dt class="prjDT">Description</dt>
+                <dd class="prjDD">A memory board game that is build with <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b> and <b>jQuery</b>.</dd>
+              <dt class="prjDT">GitHub Repository</dt>
+                <dd class="prjDD">
+                  <a class="prjLink" href="https://github.com/shyyuan/WDIR-Project-1" target="_blank">https://github.com/shyyuan/WDIR-Project-1</a></dd>
+              <dt class="prjDT">Live Siste</dt>
+                <dd class="prjDD">
+                  <a class="prjLink" href="https://shyyuan.github.io/WDIR-Project-1/" target="_blank">https://shyyuan.github.io/WDIR-Project-1/</a></dd>
             </dl>
           </div>
           <!-- END Project 1 Section -->
@@ -56,44 +61,46 @@
           <label for="section2">Project 2: Dance Portfolio</label>
           <div class="section">
             <dl>
-              <dt>Description</dt>
-                <dd>description</dd>
-              <dt>GitHub Repository</dt>
-                <dd>site link</dd>
-              <dt>Live Siste</dt>
-                <dd>site link</dd>
+              <dt class="prjDT">Description</dt>
+                <dd class="prjDD">A full-stack application which adhere to the <b>MVC</b> file structure, using <b>Mongo DB</b>, <b>Node.js</b>, <b>Mongoose</b>, <b>Express</b> and <b>EJS</b>, has complete RESTful routes for resources with GET, POST, PUT, and DELETE methods.</dd>
+              <dt class="prjDT">GitHub Repository</dt>
+                <dd class="prjDD">
+                  <a class="prjLink" href="https://github.com/shyyuan/dance-portfolio" target="_blank">https://github.com/shyyuan/dance-portfolio</a></dd>
+              <dt class="prjDT">Live Siste</dt>
+                <dd class="prjDD">
+                  <a class="prjLink" href="https://dance-portfolio.herokuapp.com/" target="_blank">https://dance-portfolio.herokuapp.com/</a></dd>
             </dl>
           </div>
           <!-- END Project 2 Section -->
 
           <!-- START Project 3 Section -->
           <input type="checkbox" name="section" id="section3" value="3">
-          <label for="section3">Project 3: Bitefinder</label>
+          <label for="section3">Project 3: BiteFinder</label>
           <div class="section">
             <dl>
-              <dt>Description</dt>
-                <dd>description</dd>
-              <dt>GitHub Repository</dt>
-                <dd>site link</dd>
-              <dt>Live Siste</dt>
-                <dd>site link</dd>
-            </dl>
+              <dt class="prjDT">Description</dt>
+                <dd class="prjDD">A full-stack appliction using MEAN (Mongo, Express, Angular, Node) and a third party API .</dd>
+              <dt class="prjDT">GitHub Repository</dt>
+                <dd class="prjDD">
+                  <a class="prjLink" href="https://github.com/shyyuan/dev-bitefinder" target="_blank">https://github.com/shyyuan/dev-bitefinder</a></dd>
+              <dt class="prjDT">Live Siste</dt>
+                <dd class="prjDD">
+                  <a class="prjLink" href="http://bitefinder.herokuapp.com/" target="_blank">http://bitefinder.herokuapp.com/</a></dd>
             </dl>
           </div>
           <!-- END Project 3 Section  -->
 
           <!-- START Project 4 Section -->
-          <input type="checkbox" name="section" id="section3" value="3">
-          <label for="section3">Project 4: TypePolitik</label>
+          <input type="checkbox" name="section" id="section4" value="4">
+          <label for="section4">Project 4: TypePolitik</label>
           <div class="section">
             <dl>
-              <dt>Description</dt>
-                <dd>description</dd>
-              <dt>GitHub Repository</dt>
-                <dd>site link</dd>
-              <dt>Live Siste</dt>
-                <dd>site link</dd>
-            </dl>
+              <dt class="prjDT">Description</dt>
+                <dd class="prjDD">description</dd>
+              <dt class="prjDT">GitHub Repository</dt>
+                <dd class="prjDD">site link</dd>
+              <dt class="prjDT">Live Siste</dt>
+                <dd class="prjDD"><a href="#">site link</a></dd>
             </dl>
           </div>
           <!-- END Project 4 Section  -->
@@ -103,13 +110,12 @@
           <label for="section3">Project 4: TypePolitik</label>
           <div class="section">
             <dl>
-              <dt>Description</dt>
+              <dt class="prjDT">Description</dt>
                 <dd>description</dd>
-              <dt>GitHub Repository</dt>
+              <dt class="prjDT">GitHub Repository</dt>
                 <dd>site link</dd>
-              <dt>Live Siste</dt>
+              <dt class="prjDT">Live Siste</dt>
                 <dd>site link</dd>
-            </dl>
             </dl>
           </div> -->
           <!-- END Final Project Section  -->

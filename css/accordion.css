@@ -1,6 +1,6 @@
 
 .accordion {
-  width: 30vw;
+  width: 40vw;
   min-width: 320px;
   overflow: hidden;
   margin: auto;
@@ -111,16 +111,22 @@ dl {
     background: rgba(255, 255, 255, 0.8);
     cursor: pointer;
   }
-  
+
 a: {
   color: blue;
 }
-a: link {
-  color: inherit;
+a:visited {
+  color: blue;
+}
+
+.prjDT {
+  padding-top: .5em;
+  font-weight: bold;
 }
 .prjLink:hover {
   cursor: pointer;
 }
 .prjDD {
   padding: .5em 0 1em 0;
+  /*text-indent: 2em;*/
 }
