@@ -1,0 +1,93 @@
+#accordionI {
+  width: 100%;
+  min-width: 320px;
+  overflow: hidden;
+  margin: auto;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  text-align: left;
+
+}
+/* the '+' means the label directly after the input */
+#accordionI input:checked + label {
+  background: #a9b7d9;
+}
+/* remove the checkbox in front-end visidualy, but not the function */
+#accordionI input {
+  display: none;
+}
+
+/* Give the label some styling */
+#accordionI input + label {
+  /*Display, color, position, layout*/
+  display: block;
+  border-bottom: 1px solid #a9b7d9; /*#3399cc;*/
+  position: relative;
+  /*background: #49b1e5;*/
+  background:#a9b7d9;
+  padding: 10px;
+
+  /*Pointer*/
+  cursor: pointer;
+
+  /*Font*/
+  font-weight: bold;
+  /*color: white;*/
+
+  /*This is so that when the background color changes, it will happen happen slowly*/
+  transition: background 0.75s;
+  -moz-transition: background 0.75s;
+  -o-transition: background 0.75s;
+  -webkit-transition: background 0.75s;
+}
+
+/*Make the background color change when someone hovers over the label*/
+#accordionI input + label:hover {
+  background: #5f7ab9;
+}
+/* Styling the Section div */
+#accordionI .sectionI {
+
+  /*space for the text to breathe*/
+  padding: 0 10px;
+  /*transitioning between states will look smoother*/
+  transition: height 0.75s, opacity 0.75s;
+  -moz-transition: height 0.75s, opacity 0.75s;
+  -o-transition: height 0.75s, opacity 0.75s;
+  -webkit-transition: height 0.75s, opacity 0.75s;
+  /* "hide" the sections */
+  opacity: 0;
+  height: 0;
+}
+
+#accordionI input:checked + label + .sectionI {
+  display: block;
+  overflow: auto;
+  height: 300px;
+  opacity: 1;
+  background: white;
+  color: #333;
+}
+#accordionI input + label:after {
+  /*font-size:14px;*/
+  position: absolute;
+  top: 14px;
+  right: 10px;
+  transition: 0.75s;
+  -moz-transition: transform 0.75s;
+  -o-transition: transform 0.75s;
+  -webkit-transition: transform 0.75s;
+}
+#accordionI input + label:after {
+  transition: 0.75s;
+}
+#accordionI .sectionI h4 {
+  margin: .5em;
+}
+#accordionI .sectionI ul {
+  padding-top: .5em;
+}
+#accordionI > .sectionI > ul > li {
+  list-style-position: inside;
+  list-style-type: disc;
+  padding-left: 1em;
+}

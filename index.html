@@ -5,6 +5,7 @@
     <title>Sheila Yuan</title>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/accordionI.css">
     <link rel="stylesheet" href="./css/accordion.css">
     <link rel="icon" href="images/favicon.png" sizes="16x16" type="image/png">
     <link rel="icon" href="images/favicon.png" sizes="32x32" type="image/png">
@@ -16,16 +17,71 @@
     <header>
       <div class="topImg"></div>
       <nav>
-          <h1>Sheila Yuan</h1>
         <ul>
-          <li><a href="#" id="homeLink">Home</a></li>
-          <li>Work Experiences</li>
-          <li><a href="#" id="projectsLink">Personal Projects</a></li>
+          <li><a href="#" id="homeLink">About Me</a></li>
+          <li><a href="#" id="workLink">Work Experiences</a></li>
+          <li><a href="#" id="projectsLink">Training and Projects</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
+
+
+      <section id="aboutMe">
+
+        <img src="images/SheilaYuan.png" alt="">
+        <h1>Sheila H. Yuan</h1>
+        <p>A Software Engineer based at Washington D.C. metropolitan area.  With over 18 years of experience in both front-end application and back end database development. Have years of experience in working across the full System Development Live Cycle (SDLC) with JIRA and GitHub tools.  Expertise in relational databases and PL/SQL programming. Proficient in web developments skills such as HTML5, CSS framework, and MEAN full-stak development.
+        <br/><br/>
+        </p>
+
+
+      </section>
+
+
+      <!-- ********************* -->
+      <!-- Work Experiences Section -->
+      <!-- ********************* -->
+      <section id="workExperience">
+        <h1>Work Experience</h1>
+        <!-- Accordion div -->
+        <div id="accordionI">
+
+          <!-- START BAH Section  -->
+          <input type="checkbox" name="bah" id="bah" value="bah">
+          <label for="bah">November 1998 - Present&nbsp;&nbsp;&nbsp;Booz Allen Hamilton, Inc.</label>
+          <div class="sectionI">
+
+
+
+
+
+
+
+          </div>
+          <!-- END of BAH Section -->
+
+          <!-- START Biztrans Section  -->
+          <input type="checkbox" name="biz" id="biz" value="biz">
+          <label for="biz">August 1997 - October 1998&nbsp;&nbsp;&nbsp;Biztrans Information Technologies Inc.</label>
+          <div class="sectionI">
+            <h4>Orcle Developer</h4>
+            <ul>
+              <li>Participated in full life cycle of an Oracle Developer2000 application project to create and maintain Customer Billing and Contact Management System.</li>
+              <li>Created and managed database objects in Oracle database server, constructed dynamic scripts to generate SQL programs and used PL/SQL to create/modified database functions, procedures and packages to improve performance.</li>
+              <li>Refreshed database data using SQL*Loader, export and import to populate data.</li>
+              <li>Designed, created, tested and modified Oracle Forms4.5 and Reports2.5 applications based on business rules and user’s requirements.</li>
+            </ul>
+          </div>
+          <!-- END of Biztrans Section -->
+        </div>
+        <!-- End of Accordion div -->
+      </section>
+      <!-- **************************** -->
+      <!-- END of Work Experiences Section -->
+      <!-- **************************** -->
+
 
 
 
@@ -34,13 +90,13 @@
       <!-- ********************* -->
       <!-- WDIR Projects Section -->
       <!-- ********************* -->
-      <div id="projects">
+      <section id="projects">
         <!-- Accordion div -->
         <div class="accordion">
 
           <!-- The "dropdown" boxes are actually checkboxes  -->
           <!-- START Project 1 Section  -->
-          <input type="checkbox" name="section" id="section1" value="1">
+          <input type="checkbox" name="section1" id="section1" value="1">
           <label for="section1">Project 1: Memory Game</label>
           <div class="section">
             <dl>
@@ -48,16 +104,16 @@
                 <dd class="prjDD">A memory board game that is build with <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b> and <b>jQuery</b>.</dd>
               <dt class="prjDT">GitHub Repository</dt>
                 <dd class="prjDD">
-                  <a class="prjLink" href="https://github.com/shyyuan/WDIR-Project-1" target="_blank">https://github.com/shyyuan/WDIR-Project-1</a></dd>
-              <dt class="prjDT">Live Siste</dt>
+                  <a href="https://github.com/shyyuan/WDIR-Project-1" target="_blank">https://github.com/shyyuan/WDIR-Project-1</a></dd>
+              <dt class="prjDT">Live Site</dt>
                 <dd class="prjDD">
-                  <a class="prjLink" href="https://shyyuan.github.io/WDIR-Project-1/" target="_blank">https://shyyuan.github.io/WDIR-Project-1/</a></dd>
+                  <a href="https://shyyuan.github.io/WDIR-Project-1/" target="_blank">https://shyyuan.github.io/WDIR-Project-1/</a></dd>
             </dl>
           </div>
           <!-- END Project 1 Section -->
 
           <!-- START Project 2 Section -->
-          <input type="checkbox" name="section" id="section2" value="2">
+          <input type="checkbox" name="section2" id="section2" value="2">
           <label for="section2">Project 2: Dance Portfolio</label>
           <div class="section">
             <dl>
@@ -65,56 +121,57 @@
                 <dd class="prjDD">A full-stack application which adhere to the <b>MVC</b> file structure, using <b>Mongo DB</b>, <b>Node.js</b>, <b>Mongoose</b>, <b>Express</b> and <b>EJS</b>, has complete RESTful routes for resources with GET, POST, PUT, and DELETE methods.</dd>
               <dt class="prjDT">GitHub Repository</dt>
                 <dd class="prjDD">
-                  <a class="prjLink" href="https://github.com/shyyuan/dance-portfolio" target="_blank">https://github.com/shyyuan/dance-portfolio</a></dd>
-              <dt class="prjDT">Live Siste</dt>
+                  <a href="https://github.com/shyyuan/dance-portfolio" target="_blank">https://github.com/shyyuan/dance-portfolio</a></dd>
+              <dt class="prjDT">Live Site</dt>
                 <dd class="prjDD">
-                  <a class="prjLink" href="https://dance-portfolio.herokuapp.com/" target="_blank">https://dance-portfolio.herokuapp.com/</a></dd>
+                  <a href="https://dance-portfolio.herokuapp.com/" target="_blank">https://dance-portfolio.herokuapp.com/</a></dd>
             </dl>
           </div>
           <!-- END Project 2 Section -->
 
           <!-- START Project 3 Section -->
-          <input type="checkbox" name="section" id="section3" value="3">
+          <input type="checkbox" name="section3" id="section3" value="3">
           <label for="section3">Project 3: BiteFinder</label>
           <div class="section">
             <dl>
               <dt class="prjDT">Description</dt>
-                <dd class="prjDD">A full-stack appliction using MEAN (Mongo, Express, Angular, Node) and a third party API .</dd>
+                <dd class="prjDD">A full-stack appliction which adhere to the <b>MVC</b> file structure, using <b>MEAN (Mongo, Express, Angular, Node)</b> and a third party API .</dd>
               <dt class="prjDT">GitHub Repository</dt>
                 <dd class="prjDD">
-                  <a class="prjLink" href="https://github.com/shyyuan/dev-bitefinder" target="_blank">https://github.com/shyyuan/dev-bitefinder</a></dd>
-              <dt class="prjDT">Live Siste</dt>
+                  <a href="https://github.com/shyyuan/dev-bitefinder" target="_blank">https://github.com/shyyuan/dev-bitefinder</a>
+                </dd>
+              <dt class="prjDT">Live Site</dt>
                 <dd class="prjDD">
-                  <a class="prjLink" href="http://bitefinder.herokuapp.com/" target="_blank">http://bitefinder.herokuapp.com/</a></dd>
+                  <a href="http://bitefinder.herokuapp.com/" target="_blank">http://bitefinder.herokuapp.com/</a></dd>
             </dl>
           </div>
           <!-- END Project 3 Section  -->
 
           <!-- START Project 4 Section -->
-          <input type="checkbox" name="section" id="section4" value="4">
+          <input type="checkbox" name="section4" id="section4" value="4">
           <label for="section4">Project 4: TypePolitik</label>
           <div class="section">
             <dl>
               <dt class="prjDT">Description</dt>
                 <dd class="prjDD">description</dd>
               <dt class="prjDT">GitHub Repository</dt>
-                <dd class="prjDD">site link</dd>
-              <dt class="prjDT">Live Siste</dt>
+                <dd class="prjDD">repo link</dd>
+              <dt class="prjDT">Live Site</dt>
                 <dd class="prjDD"><a href="#">site link</a></dd>
             </dl>
           </div>
           <!-- END Project 4 Section  -->
 
           <!-- START Final Project Section -->
-          <!-- <input type="checkbox" name="section" id="section3" value="3">
-          <label for="section3">Project 4: TypePolitik</label>
+          <!-- <input type="checkbox" name="section5" id="section5" value="5">
+          <label for="section5">Project 5: Teachers Connection</label>
           <div class="section">
             <dl>
               <dt class="prjDT">Description</dt>
                 <dd>description</dd>
               <dt class="prjDT">GitHub Repository</dt>
-                <dd>site link</dd>
-              <dt class="prjDT">Live Siste</dt>
+                <dd>repo link</dd>
+              <dt class="prjDT">Live Site</dt>
                 <dd>site link</dd>
             </dl>
           </div> -->
@@ -122,10 +179,12 @@
 
         </div>
         <!-- End of Accordion div -->
-    </div>
-      <!-- **************************** -->
-      <!-- END of WDIR Projects Section -->
-      <!-- **************************** -->
+    </section>
+    <!-- **************************** -->
+    <!-- END of WDIR Projects Section -->
+    <!-- **************************** -->
+
+
 
     </main>
 
@@ -135,11 +194,11 @@
 
     </footer>
 
-
+<!--
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"
       integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
-    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/app.js"></script> -->
 
 
   </body>
