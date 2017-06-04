@@ -5,24 +5,28 @@
     <title>Sheila Yuan</title>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/accordionI.css">
     <link rel="stylesheet" href="./css/accordion.css">
     <link rel="icon" href="images/favicon.png" sizes="16x16" type="image/png">
     <link rel="icon" href="images/favicon.png" sizes="32x32" type="image/png">
     <link rel="icon" href="images/favicon.png" sizes="48x48" type="image/png">
     <link rel="icon" href="images/favicon.png" sizes="62x62" type="image/png">
   </head>
+
   <body>
 
     <header>
-      <div class="topImg"></div>
       <nav>
         <ul>
           <li><a href="#" id="homeLink">About Me</a></li>
+          <li><a href="#" id="trainingLink">Trainings</a></li>
+          <li><a href="#" id="projectsLink">Projects</a></li>
           <li><a href="#" id="workLink">Work Experiences</a></li>
-          <li><a href="#" id="projectsLink">Training and Projects</a></li>
         </ul>
       </nav>
+      <div class="topImg"></div>
+      <div class="name">
+        <h1>Sheila H. Yuan</h1>
+      </div>
     </header>
 
     <main>
@@ -31,42 +35,288 @@
       <section id="aboutMe">
 
         <img src="images/SheilaYuan.png" alt="">
-        <h1>Sheila H. Yuan</h1>
-        <p>A Software Engineer based at Washington D.C. metropolitan area.  With over 18 years of experience in both front-end application and back end database development. Have years of experience in working across the full System Development Live Cycle (SDLC) with JIRA and GitHub tools.  Expertise in relational databases and PL/SQL programming. Proficient in web developments skills such as HTML5, CSS framework, and MEAN full-stak development.
+        <h2>About Me</h2>
+        <p>A Software Engineer based in Washington D.C. metropolitan area.  With over 18 years of experience in both front-end web application and back-end database development. Work across the full System Development Live Cycle (SDLC) with JIRA and GitHub tools.  Expertise in relational databases and PL/SQL programming. Proficient in web developments skills such as HTML5, CSS framework, Ruby on Rails, RESTful and MEAN full-stack development.
         <br/><br/>
         </p>
 
+      </section>
+
+      <!-- ******** -->
+      <!-- Trainings -->
+      <!-- ******** -->
+      <section id="trainings">
+        <div>
+          <h2>Trainings</h2>
+        </div>
+
+        <div id="mc">
+          <a href="http://www.montgomerycollege.edu/" target="_blank"><img src="images/MClogo.png" alt="Montgomery College"></a>
+          <p><b>CyberAdvantage Program at Montgomery College</b></p>
+          <p>January 2017 - August 2017</p>
+          <p>Web Security | Network + | Security + | Software Quality Assurance</p>
+        </div>
+
+        <div id="ga">
+          <a href="https://generalassemb.ly/" target="_blank"><img src="images/ga.png" alt="General Assembly"></a>
+          <p id="gaP"><b>Web Development Immersive Remote at General Assembly</b></p>
+          <p>March 2017 - June 2017</p>
+          <p>HTML5 | CSS | JavaScript | jQuery | RESTful routes | MEAN full-stack | Ruby on Rails</p>
+        </div>
+
+        <div id="gm">
+          <a href="https://www2.gmu.edu/" target="_blank"><img src="images/georgemason.png" alt="George Mason University"></a>
+          <p id="gaP"><b>Cloud Computing with Hadoop at George Mason University</b></p>
+          <p>September 2016 - October 2016</p>
+          <p>Big Data | Hadoop | Map Reduce | HDFS | Hive | Pig | NoSQL</p>
+        </div>
+
 
       </section>
+      <!-- ******** -->
+      <!-- End of Trainings -->
+      <!-- ******** -->
+
+
+      <!-- ********************* -->
+      <!-- WDIR Projects Section -->
+      <!-- ********************* -->
+      <section id="projects">
+        <div>
+          <h2>Projects</h2>
+        </div>
+<!--
+        <div class="projectNav">
+          <ul>
+            <li><a href="#" id="memoryGameLink">Memory Game</a></li>
+            <li><a href="#" id="dancePortfolioLink">Dance Portfolio</a></li>
+            <li><a href="#" id="bitefinderLink">BiteFinder</a></li>
+            <li><a href="#" id="typePolitikLink">TypePolitik</a></li>
+          </ul>
+        </div> -->
+
+        <!-- START Project 1 Section  -->
+        <div id="memoryGame" class="oneProject">
+          <h3>Memory Game</h3>
+          <p><b>Description:</b> A cards memory board game that can be played with one or two persons.</p>
+          <p><b>Technologies Used:</b> One <span class="tech">HTML</span> file with <span class="tech">CSS</span>, <span class="tech">JavaScript</span> and <span class="tech">jQuery</span>.</p>
+          <p><b>GitHub Repository:</b>
+            <a href="https://github.com/shyyuan/WDIR-Project-1" target="_blank">https://github.com/shyyuan/WDIR-Project-1</a></p>
+          <p><b>Live Site:</b>
+            <a href="https://shyyuan.github.io/WDIR-Project-1/" target="_blank">https://shyyuan.github.io/WDIR-Project-1/</a></p>
+        </div>
+        <!-- END Project 1 Section -->
+
+        <!-- START Project 2 Section -->
+        <div id="Dance" class="oneProject">
+          <h3>Dance Portfolio</h3>
+          <p><b>Description:</b> A site where you can view the dance collection, or sign up to leave comments and to post your favorite dance pieces as a contributor.</p>
+          <p><b>Technologies Used:</b> A full-stack application which adhere to the <span class="tech">MVC</span> file structure, using <span class="tech">Mongo DB</span>, <span class="tech">Node.js</span>, <span class="tech">Mongoose</span>, <span class="tech">Express</span> and <span class="tech">EJS</span>, has complete <span class="tech">RESTful</span> routes for resources with GET, POST, PUT, and DELETE methods.</p>
+          <p><b>GitHub Repository:</b>
+            <a href="https://github.com/shyyuan/dance-portfolio" target="_blank">https://github.com/shyyuan/dance-portfolio</a></p>
+          <p><b>Live Site:</b>
+            <a href="https://dance-portfolio.herokuapp.com/" target="_blank">https://dance-portfolio.herokuapp.com/</a></p>
+          </div>
+          <!-- END Project 2 Section -->
+
+          <!-- START Project 3 Section -->
+          <div id="BiteFinder" class="oneProject">
+            <h3>BiteFinder</h3>
+            <p><b>Description:</b> An application that user can find a list of restaurants in a given location range, see detailed information about one restaurant.  User can register an account to pin the location and save the restaurant to a favorites list.</p>
+            <p><b>Technologies Used:</b> A single-page, full-stack appliction that utilizes the <span class="tech">MVC</span> file structure, <span class="tech">MEAN</span> methods (<span class="tech">MongoDB, Express, Angular, Node</span>) and a third party API.</p>
+            <p><b>GitHub Repository:</b>
+              <a href="https://github.com/shyyuan/dev-bitefinder" target="_blank">https://github.com/shyyuan/dev-bitefinder</a></p>
+            <p><b>Live Site:</b>
+              <a href="http://bitefinder.herokuapp.com/" target="_blank">http://bitefinder.herokuapp.com/</a></p>
+            </div>
+            <!-- END Project 3 Section  -->
+
+            <!-- START Project 4 Section -->
+            <div id="typePolitic" class="oneProject">
+              <h3>TypePolitik</h3>
+              <p><b>Description:</b> A forum application that allows users to semi-anonymously post their political opinions with political affiliation in the color of the post. The user may also like other posts according to their political affiliation and comment on posts without needing an account. A separate admin site that only the admin user is able to edit and delete content from the site based off discretion.</p>
+              <p><b>Technologies Used:</b> The app utilizes <span class="tech">Ruby on Rails</span> as backbone with <span class="tech">postgresql</span> database. The frontend is a single page <span class="tech">angular.js</span> with <span class="tech">express</span> using <span class="tech">HTML</span>, <span class="tech">CSS</span>, <span class="tech">bootstrap</span> and <span class="tech">JavaScript</span>.</p>
+              <p><b>GitHub Repository:</b><br/>
+                <b>Rails API</b> - <a href="https://github.com/shyyuan/typepolitik_api" target="_blank">https://github.com/shyyuan/typepolitik_api</a><br/>
+                <b>App Frontend</b> - <a href="https://github.com/shyyuan/typepolitik_app_frontend" target="_blank">https://github.com/shyyuan/typepolitik_app_frontend</a><br/>
+                <b>Admin Frontend</b> - <a href="https://github.com/shyyuan/typepolitik_app_admin" target="_blank">https://github.com/shyyuan/typepolitik_app_admin</a>
+              </p>
+              <p><b>Live Site:</b><br/>
+                <b>Rails API</b> - <a href="https://typepolitik99.herokuapp.com/" target="_blank">https://typepolitik99.herokuapp.com/</a><br/>
+                <b>App Frontend</b> - <a href="https://typepolitikapp.herokuapp.com/" target="_blank">https://typepolitikapp.herokuapp.com/</a><br/>
+                <b>Admin Frontend</b> - <a href="https://typepolitikappadmin.herokuapp.com/" target="_blank">https://typepolitikappadmin.herokuapp.com/</a>
+              </p>
+
+
+
+            </div>
+            <!-- END Project 4 Section  -->
+
+          </section>
+          <!-- **************************** -->
+          <!-- END of WDIR Projects Section -->
+          <!-- **************************** -->
+
+
+
+
 
 
       <!-- ********************* -->
       <!-- Work Experiences Section -->
       <!-- ********************* -->
       <section id="workExperience">
-        <h1>Work Experience</h1>
+        <h2>Work Experience</h2>
+
         <!-- Accordion div -->
-        <div id="accordionI">
+        <div id="accordion">
 
-          <!-- START BAH Section  -->
+          <!-- START BAH Section -->
           <input type="checkbox" name="bah" id="bah" value="bah">
-          <label for="bah">November 1998 - Present&nbsp;&nbsp;&nbsp;Booz Allen Hamilton, Inc.</label>
-          <div class="sectionI">
+          <label for="bah">November 1998 - Present:&nbsp;&nbsp;&nbsp;Software Engineer,&nbsp;&nbsp;&nbsp;Booz Allen Hamilton, Inc.</label>
+          <div class="sectionBAH">
+            <!-- Inside BAH accordion  -->
+            <div id="BAHaccordion">
+              <!-- 9/16-2/17 Trac2es  -->
+              <input type="checkbox" name="bah1" id="bah1" value="1">
+              <label for="bah1">Sep 2016 - Feb 2017:&nbsp;&nbsp;&nbsp;Transportation Command (TRANSCOM) Regulating and Command &amp; Control Evacuation System (TRAC2ES)</label>
+              <div class="section">
+                <ul>
+                  <li>Modified existing WebFOCUS reporting objects and ad-hoc reports for TRAC2ES Organizational Data Store (TODS) based on clients’ requirements for scheduled release.</li>
+                  <li>Modified database views and packages to implement the scheduled release.</li>
+                  <li>Participated in Oracle 12c upgrade by installing/upgrading software on development servers.</li>
+                </ul>
+              </div>
 
+              <!-- 1/16-6/16 Trac2es  -->
+              <input type="checkbox" name="bah2" id="bah2" value="2">
+              <label for="bah2">Jan 2016 - Jun 2016:&nbsp;&nbsp;&nbsp;Transportation Command (TRANSCOM) Regulating and Command &amp; Control Evacuation System (TRAC2ES)</label>
+              <div class="section">
+                <ul>
+                  <li>Created new WebFOCUS reporting objects and reports for TRAC2ES Aeromedical Evacuation Registry (AER) Data Research Support task based on client’s requirements.</li>
+                  <li>Created new Oracle database views and modified existing views to retrieve data for AER reports.</li>
+                  <li>Created database model and entity relationship diagram in supporting required documents for AER.</li>
+                </ul>
+              </div>
 
+              <!-- 10/14-4/16 DOT PHMSA  -->
+              <input type="checkbox" name="bah3" id="bah3" value="3">
+              <label for="bah3">Oct 2014 - Apr 2016:&nbsp;&nbsp;&nbsp;Online Code of Federal Regulations (CFR) Development and Implementation for Pipeline and Hazardous Materials Safety Administration (PHMSA) of the U.S. Department of Transportation, on-site at DoT Headquarter</label>
+              <div class="section more-height">
+                <ul>
+                <li>Created and maintained database objects, such as tables, views, indexes, sequences, triggers, packages, and procedures for efficient data access and data integrity.</li>
+                <li>Analyzed the data structures of the CFR XML files and the Federal Register Publication XML files which are from the Federal Digital System (FDsys) of the U.S. Government Publishing Office (GPO).</li>
+                <li>Created and modified database procedures using XQuery to extract CFR, Appendixes, Hazmat Tables, and Rulemakings data from the XML files and load into Oracle database.</li>
+                <li>Imported Interpretation Letters and Petitions records from Excel files to Oracle database.</li>
+                <li>Created and modified database procedures to build relationships between CFR section and other modules, such as Rulemaking, Interpretation Letters, Outreach and Training Materials, and Petitions.</li>
+                <li>Created and modified database packages and procedures to serve as Search function in CFR, Appendixes, Hazmat Tables, and Interpretation Letters modules.  The procedures will return records set to display in front-end based on the passed in search criteria.</li>
+                <li>Worked with developers to integrate the front-end and database design for the system.  Helped developers with database query statements.  Conducted system testing and provided feedback to developers.</li>
+                <li>Composed database dictionary document and contributed in CONOPS document regarding data extracting steps.</li>
+                </ul>
+              </div>
 
+              <!-- 08/14-09/14 U.S Fleet  -->
+              <input type="checkbox" name="bah4" id="bah4" value="4">
+              <label for="bah4">Aug 2014 - Sep 2014:&nbsp;&nbsp;&nbsp;U.S. Fleet Cyber Command Accreditation Tracker Database Application</label>
+              <div class="section">
+                <ul>
+                  <li>Enhanced the U.S. Fleet Cyber Command Certification and Accreditation Tracker Application in Microsoft Access Database by modifying Access VBA codes to correct existing errors, add new functions, and create a new report in the system</li>
+                </ul>
+              </div>
 
+              <!-- 5/05-7/14 Trac2es  -->
+              <input type="checkbox" name="bah5" id="bah5" value="5">
+              <label for="bah5">May 2005 - Jul 2014:&nbsp;&nbsp;&nbsp;Transportation Command (TRANSCOM) Regulating and Command &amp; Control Evacuation System (TRAC2ES)</label>
+              <div class="section">
+                <ul>
+                  <li>Created WebFOCUS reporting objects and ad-hoc reports for TRAC2ES Organizational Data Store (TODS) task.  Successfully converted existing reports from Silverstream to WebFOCUS.</li>
+                  <li>Created and modified database views and packages that support TODS WebFOCUS reports.</li>
+                  <li>Assisted Oracle DBA in Oracle patches and 11g upgrade tasks.</li>
+                  <li>Performed database development for the Contractor Logistics Support (CLS) task in writing Database Design Document (DBDD) and SQL scripts, and modifying database procedures and packages.</li>
+                  <li>Participated in TRAC2ES web system development using Java (J2EE) and JSP to support several web application system releases.</li>
+                  <li>Maintained and supported the TRAC2ES WebWorks system using Cold Fusion and SQL Server.</li>
+                </ul>
+              </div>
 
+              <!-- 6/06-9/06 BRAC  -->
+              <input type="checkbox" name="bah6" id="bah6" value="6">
+              <label for="bah6">Jun 2006 - Sep 2006:&nbsp;&nbsp;&nbsp;Base Realignment and Closure (BRAC) Recommendations Web Application System for the United States Marine Corps (USMC) Headquarter</label>
+              <div class="section">
+                <ul>
+                  <li>Provided a short-term support in Phase I design and development while the developer was on leave.</li>
+                  <li>Performed as an Oracle DBA in database modeling, design and development for the system.</li>
+                  <li>Responsible for design, development, testing and implementation of the web-enabled database application using Cold Fusion, JavaScript and HTML.</li>
+                  <li>Completed Phase I within two months and successfully handed over to the original developer.</li>
+                </ul>
+              </div>
 
+              <!-- 11/99-4/05 FI  -->
+              <input type="checkbox" name="bah7" id="bah7" value="7">
+              <label for="bah7">Nov 1999 - Apr 2005:&nbsp;&nbsp;&nbsp;Facilities Integration (FI) Web Application System for the United States Marine Corps (USMC) Headquarter</label>
+              <div class="section high-height">
+                <ul>
+                  <li>Performed as a technical lead in the USMC FI web application development team.  The application was used by authorized Marine Corps facilities personnel in the execution of their local facilities program.</li>
+                  <li>Responsible for design, development, testing and implementation of the web-enabled database application tasks using Cold Fusion, JavaScript and HTML.</li>
+                  <li>Analyzed the existing system for enhancement that requested by clients.</li>
+                  <li>Experienced full life cycle software development.  Involved in requirements, design, development, prototype, testing, documentation, implementation, and training phrases.</li>
+                  <li>Performed as an Oracle DBA to manage database objects and maintain data integrity.</li>
+                  <li>Responsible for monthly data updating by using Oracle script and export/import utilities to download data from Internet Navy Facility Assets Data Store (iNFADS) to FI database.</li>
+                  <li>Participated in the data transferring task between FI and Potomac Hudson Engineer Inc. (PHE) using Cold Fusion script and scheduler, and Oracle SQL Loader script.  Provided data dump to PHE for any data discrepancy.</li>
+                  <li>Monitored daily scheduled tasks on Cold Fusion server.</li>
+                  <li>Installed Oracle database on the development and test servers under supervision of an Oracle DBA.</li>
+                  <li>Assisted in database design, Cold Fusion application developing for the Facilities Applications Management System (FAMS) and the Modification Request System (MRS) tasks in FI.</li>
+                  <li>Took charge of the GEOFidelis Inventory Website task in FI project, including requirement analysis, webpage and administration tool design, and database setup.</li>
+                </ul>
+              </div>
 
+              <!-- 11/99-10/11 CMP  -->
+              <input type="checkbox" name="bah8" id="bah8" value="8">
+              <label for="bah8">Nov 1999 - Oct 2011:&nbsp;&nbsp;&nbsp;Interim Career Mobility Program (CMP) System for Recruiting Service Team in Global Operations (GO) Team of BAH</label>
+              <div class="section more-height">
+                <ul>
+                  <li>Performed as the single person developer and database administrator on the project.</li>
+                  <li>Analyzed, implemented and maintained the Cold Fusion web-based application system and the Oracle database.</li>
+                  <li>Performed full life cycle enhancement at least once each year.  Communicated with clients in identifying requirements and providing recommendations for implementation.</li>
+                  <li>Provided users with day-to-day support by being responsive to impromptu tasks and running ad-hoc reports.</li>
+                  <li>Modified and extended the system by adding functionalities requested by users.  Improved the system with several enrichment releases by analyzing past ad hoc requests from users.  The enhancements compensated the lack of functions in existing system and reduce users’ unplanned requests.</li>
+                  <li>Collaborated with Information Service Team who hosted the system for system and database migration and upgrading releases.<br/><br/></li>
+                </ul>
+              </div>
+
+              <!-- 5/99-10/99 OASD/PA   -->
+              <input type="checkbox" name="bah9" id="bah9" value="9">
+              <label for="bah9">May 1999 - Oct 1999:&nbsp;&nbsp;&nbsp;Technical Information Resource Management (IRM) Support for the Office of the Assistant Secretary of Defense for Public Affairs (OASD/PA), on-site at the Pentagon</label>
+              <div class="section">
+                <ul>
+                  <li>Designed, developed, tested, prototyped and implemented the Briefing Room Reservation web application for the Directorate for Defense Information (DDI) in OASD/PA Intranet using Cold Fusion.</li>
+                  <li>Applied the interface to the existing database objects on Oracle server as backend processor.</li>
+                  <li>Maintained and modified existing Oracle applications in Forms5.0 and Reports3.0.</li>
+                  <li>Executed basic Oracle DBA functions, created additional objects if necessary and managed all the objects in the database.</li>
+                  <li>Worked as a team member of technical IRM support in OASD/PA, provided general customer service and help desk support on Oracle and software issues.</li>
+                  <li>Assisted in workstation upgrade on clients’ workstation.  Assisted in installation and general setup of an Oracle client.</li>
+                </ul>
+              </div>
+
+              <!-- 11/98-4/99 DFOISR   -->
+              <input type="checkbox" name="bah10" id="bah10" value="10">
+              <label for="bah10">Nov 1998 - Apr 1999:&nbsp;&nbsp;&nbsp;Information Technology Migration Plan for the Directorate for Freedom of Information and Security Review (DFOISR), on-site at the Pentagon</label>
+              <div class="section">
+                <ul>
+                  <li>Customized format changes in Oracle Forms5.0 and Reports3.0 applications to meet DFOISR requirements for system migration.</li>
+                  <li>Implemented additional Forms and Reports applications enhancement requested by users.</li>
+                  <li>Completed all the tasks that were required in the contract and four out of eight tasks that were recommended but not required in the contract in less than four months.</li>
+                </ul>
+              </div>
+
+            </div>
+            <!-- End of insdie BAH accordion -->
           </div>
           <!-- END of BAH Section -->
 
           <!-- START Biztrans Section  -->
           <input type="checkbox" name="biz" id="biz" value="biz">
-          <label for="biz">August 1997 - October 1998&nbsp;&nbsp;&nbsp;Biztrans Information Technologies Inc.</label>
+          <label for="biz">August 1997 - October 1998:&nbsp;&nbsp;&nbsp;Orcle Developer,&nbsp;&nbsp;&nbsp;Biztrans Information Technologies Inc.</label>
           <div class="sectionI">
-            <h4>Orcle Developer</h4>
             <ul>
               <li>Participated in full life cycle of an Oracle Developer2000 application project to create and maintain Customer Billing and Contact Management System.</li>
               <li>Created and managed database objects in Oracle database server, constructed dynamic scripts to generate SQL programs and used PL/SQL to create/modified database functions, procedures and packages to improve performance.</li>
@@ -86,119 +336,34 @@
 
 
 
-
-      <!-- ********************* -->
-      <!-- WDIR Projects Section -->
-      <!-- ********************* -->
-      <section id="projects">
-        <!-- Accordion div -->
-        <div class="accordion">
-
-          <!-- The "dropdown" boxes are actually checkboxes  -->
-          <!-- START Project 1 Section  -->
-          <input type="checkbox" name="section1" id="section1" value="1">
-          <label for="section1">Project 1: Memory Game</label>
-          <div class="section">
-            <dl>
-              <dt class="prjDT">Description</dt>
-                <dd class="prjDD">A memory board game that is build with <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b> and <b>jQuery</b>.</dd>
-              <dt class="prjDT">GitHub Repository</dt>
-                <dd class="prjDD">
-                  <a href="https://github.com/shyyuan/WDIR-Project-1" target="_blank">https://github.com/shyyuan/WDIR-Project-1</a></dd>
-              <dt class="prjDT">Live Site</dt>
-                <dd class="prjDD">
-                  <a href="https://shyyuan.github.io/WDIR-Project-1/" target="_blank">https://shyyuan.github.io/WDIR-Project-1/</a></dd>
-            </dl>
-          </div>
-          <!-- END Project 1 Section -->
-
-          <!-- START Project 2 Section -->
-          <input type="checkbox" name="section2" id="section2" value="2">
-          <label for="section2">Project 2: Dance Portfolio</label>
-          <div class="section">
-            <dl>
-              <dt class="prjDT">Description</dt>
-                <dd class="prjDD">A full-stack application which adhere to the <b>MVC</b> file structure, using <b>Mongo DB</b>, <b>Node.js</b>, <b>Mongoose</b>, <b>Express</b> and <b>EJS</b>, has complete RESTful routes for resources with GET, POST, PUT, and DELETE methods.</dd>
-              <dt class="prjDT">GitHub Repository</dt>
-                <dd class="prjDD">
-                  <a href="https://github.com/shyyuan/dance-portfolio" target="_blank">https://github.com/shyyuan/dance-portfolio</a></dd>
-              <dt class="prjDT">Live Site</dt>
-                <dd class="prjDD">
-                  <a href="https://dance-portfolio.herokuapp.com/" target="_blank">https://dance-portfolio.herokuapp.com/</a></dd>
-            </dl>
-          </div>
-          <!-- END Project 2 Section -->
-
-          <!-- START Project 3 Section -->
-          <input type="checkbox" name="section3" id="section3" value="3">
-          <label for="section3">Project 3: BiteFinder</label>
-          <div class="section">
-            <dl>
-              <dt class="prjDT">Description</dt>
-                <dd class="prjDD">A full-stack appliction which adhere to the <b>MVC</b> file structure, using <b>MEAN (Mongo, Express, Angular, Node)</b> and a third party API .</dd>
-              <dt class="prjDT">GitHub Repository</dt>
-                <dd class="prjDD">
-                  <a href="https://github.com/shyyuan/dev-bitefinder" target="_blank">https://github.com/shyyuan/dev-bitefinder</a>
-                </dd>
-              <dt class="prjDT">Live Site</dt>
-                <dd class="prjDD">
-                  <a href="http://bitefinder.herokuapp.com/" target="_blank">http://bitefinder.herokuapp.com/</a></dd>
-            </dl>
-          </div>
-          <!-- END Project 3 Section  -->
-
-          <!-- START Project 4 Section -->
-          <input type="checkbox" name="section4" id="section4" value="4">
-          <label for="section4">Project 4: TypePolitik</label>
-          <div class="section">
-            <dl>
-              <dt class="prjDT">Description</dt>
-                <dd class="prjDD">description</dd>
-              <dt class="prjDT">GitHub Repository</dt>
-                <dd class="prjDD">repo link</dd>
-              <dt class="prjDT">Live Site</dt>
-                <dd class="prjDD"><a href="#">site link</a></dd>
-            </dl>
-          </div>
-          <!-- END Project 4 Section  -->
-
-          <!-- START Final Project Section -->
-          <!-- <input type="checkbox" name="section5" id="section5" value="5">
-          <label for="section5">Project 5: Teachers Connection</label>
-          <div class="section">
-            <dl>
-              <dt class="prjDT">Description</dt>
-                <dd>description</dd>
-              <dt class="prjDT">GitHub Repository</dt>
-                <dd>repo link</dd>
-              <dt class="prjDT">Live Site</dt>
-                <dd>site link</dd>
-            </dl>
-          </div> -->
-          <!-- END Final Project Section  -->
-
-        </div>
-        <!-- End of Accordion div -->
-    </section>
-    <!-- **************************** -->
-    <!-- END of WDIR Projects Section -->
-    <!-- **************************** -->
-
-
-
     </main>
 
     <footer>
+      <!-- <div class="footerDiv">
+        <img src="./images/phone-icon.png" alt="Phone Number"> 301-873-8752
+      </div> -->
+      <div class="footerDiv">
+         <a class="Email" href="mailto:shyyuan@yahoo.com"><img src="./images/email-icon.png" alt="Eamil"></a>
+      </div>
+      <div class="footerDiv">
+        <a class="Email" href="Yuan_Sheila_Resume_0517.pdf" target="_blank"><img src="./images/doc-icon.png" alt="Resume"></a>
+      </div>
 
+      <div class="footerDiv">
+        <a href="https://github.com/shyyuan" target="_blank"><img src="./images/GitHub-Mark.png" alt="GitHub"></a>
+      </div>
 
+      <div class="footerDiv">
+        <a href="https://www.linkedin.com/in/sheila-yuan-dc/" class="Email" target="_blank"><img src="./images/linkedin.png" alt="Linkin"></a>
+      </div>
 
     </footer>
 
-<!--
+
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"
       integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
-    <script type="text/javascript" src="js/app.js"></script> -->
+    <script type="text/javascript" src="js/app.js"></script>
 
 
   </body>

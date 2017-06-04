@@ -1,27 +1,35 @@
-
-.accordion {
-  width: 40vw;
+#accordion, #BAHaccordion {
+  width: 100%;
   min-width: 320px;
   overflow: hidden;
   margin: auto;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  text-align: left;
+
 }
 /* the '+' means the label directly after the input */
-.accordion input:checked + label {
-  background: #bfbfbf;
+#accordion input:checked + label {
+  /*background: #b3d9ff;*/
+  background:#1a75ff;
+}
+#BAHaccordion input:checked + label {
+  background: #b3d9ff;
 }
 /* remove the checkbox in front-end visidualy, but not the function */
-.accordion input {
+#accordion input {
+  display: none;
+}
+#BAHaccordion input {
   display: none;
 }
 /* Give the label some styling */
-.accordion input + label {
+#accordion input + label {
   /*Display, color, position, layout*/
   display: block;
-  border-bottom: 1px solid #bfbfbf;  /*#3399cc;*/
+  border-bottom: 1px solid #b3d9ff; /*#3399cc;*/
   position: relative;
   /*background: #49b1e5;*/
-  background:#bfbfbf;
+  background:#b3d9ff;
   padding: 10px;
 
   /*Pointer*/
@@ -37,17 +45,37 @@
   -o-transition: background 0.75s;
   -webkit-transition: background 0.75s;
 }
+#BAHaccordion input + label {
+  /*Display, color, position, layout*/
+  display: block;
+  border-bottom: 1px solid #5f7ab9; /*#3399cc;*/
+  position: relative;
+  /*background: #49b1e5;*/
+  background:#5f7ab9;
+  padding: 10px;
 
-/*Make the background color change when someone hovers over the label*/
-.accordion input + label:hover {
-  background: #999999;
+  /*Pointer*/
+  cursor: pointer;
+
+  /*Font*/
+  font-weight: bold;
+  /*color: white;*/
+
+  /*This is so that when the background color changes, it will happen happen slowly*/
+  transition: background 0.75s;
+  -moz-transition: background 0.75s;
+  -o-transition: background 0.75s;
+  -webkit-transition: background 0.75s;
 }
-
+/*Make the background color change when someone hovers over the label*/
+#accordion input + label:hover {
+  background: #2f416a;
+}
+#BAHaccordion input + label:hover {
+  background: #2f416a;
+}
 /* Styling the Section div */
-.accordion .section {
-  /*background & font styling*/
-  /*background: white;
-  color: #AAA;
+#accordion .sectionI {
   /*space for the text to breathe*/
   padding: 0 10px;
   /*transitioning between states will look smoother*/
@@ -59,27 +87,56 @@
   opacity: 0;
   height: 0;
 }
-
-/* Remove the gaps in between the labels which is being caused by the margins on the dl elements */
-dl {
-  margin: 0;
+#BAHaccordion .section {
+  /*space for the text to breathe*/
+  padding: 0 10px;
+  /*transitioning between states will look smoother*/
+  transition: height 0.75s, opacity 0.75s;
+  -moz-transition: height 0.75s, opacity 0.75s;
+  -o-transition: height 0.75s, opacity 0.75s;
+  -webkit-transition: height 0.75s, opacity 0.75s;
+  /* "hide" the sections */
+  opacity: 0;
+  height: 0;
 }
-
-/* add styling to the section if the check box is selected. We need to also specify the label in our selector because the checkbox itself is hidden and the user will be clicking the label. */
-.accordion input:checked + label + .section {
+#accordion .sectionBAH {
+  /*space for the text to breathe*/
+  padding: 0 10px;
+  /*transitioning between states will look smoother*/
+  transition: height 0.75s, opacity 0.75s;
+  -moz-transition: height 0.75s, opacity 0.75s;
+  -o-transition: height 0.75s, opacity 0.75s;
+  -webkit-transition: height 0.75s, opacity 0.75s;
+  /* "hide" the sections */
+  opacity: 0;
+  height: 0;
+}
+#accordion input:checked + label + .sectionI {
   display: block;
   overflow: auto;
-  height: 300px;
+  height: 180px;
   opacity: 1;
   background: white;
   color: #333;
 }
-/* Add icon */
-/*.accordion input + label:after {
-  /*content: "\f067";*/
-/*  content: '\f0f5';
-  font-family: 'FontAwesome';
-  font-size:14px;
+#BAHaccordion input:checked + label + .section {
+  display: block;
+  overflow: auto;
+  height: 180px;
+  opacity: 1;
+  background: white;
+  color: #333;
+}
+#accordion input:checked + label + .sectionBAH {
+  display: block;
+  overflow: auto;
+  height: 680px;
+  opacity: 1;
+  background: white;
+  color: #333;
+}
+#accordion input + label:after {
+  /*font-size:14px;*/
   position: absolute;
   top: 14px;
   right: 10px;
@@ -87,46 +144,48 @@ dl {
   -moz-transition: transform 0.75s;
   -o-transition: transform 0.75s;
   -webkit-transition: transform 0.75s;
-}*/
-/* Rotate the icon if clicked */
-/*.accordion input:checked + label:after {
-  transform: rotate(270deg);
-  -moz-transform: rotate(270deg);
-  -o-transform: rotate(270deg);
-  -webkit-transform: rotate(270deg);
-}*/
-/*
-.accordion input + label:after {
+}
+#BAHaccordion input + label:after {
+  /*font-size:14px;*/
+  position: absolute;
+  top: 14px;
+  right: 10px;
   transition: 0.75s;
-  }*/
-
-  /* Scrollbar styling (only in webkit)*/
-
-  /*.accordion ::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-    background-color: #85c2e0;
-  }*/
-
-  /*.accordion ::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.8);
-    cursor: pointer;
-  }*/
-/*
-.section  dl  dt  dd  a {
-  color: blue;
-  cursor: pointer;
+  -moz-transition: transform 0.75s;
+  -o-transition: transform 0.75s;
+  -webkit-transition: transform 0.75s;
 }
-.section  dl  dt  dd  a:visited {
-  color: blue;
-} */
-
-.prjDT {
+#accordion input + label:after {
+  transition: 0.75s;
+}
+#BAHaccordion input + label:after {
+  transition: 0.75s;
+}
+/*#accordionI .sectionI h4 {
+  margin: .5em;
+}
+#BAHaccordion .section h4 {
+  margin: .5em;
+}*/
+#accordion .sectionI ul {
   padding-top: .5em;
-  font-weight: bold;
 }
-
-/*.prjDD {
-  padding: .5em 0 1em 0;
-  /*text-indent: 2em;*/
-/*}*/
+#BAHaccordion .section ul {
+  padding-top: .5em;
+}
+#accordion > .sectionI > ul > li {
+  list-style-position: inside;
+  list-style-type: disc;
+  padding-left: 1em;
+}
+#BAHaccordion > .section > ul > li {
+  list-style-position: inside;
+  list-style-type: disc;
+  padding-left: 1em;
+}
+#BAHaccordion input:checked + label + .more-height {
+  height: 320px;
+}
+#BAHaccordion input:checked + label + .high-height {
+  height: 400px;
+}

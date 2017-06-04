@@ -3,9 +3,9 @@ console.log('Final Project: Portfolio js file is connected');
 $(function(){
   // Event Listener
   $('#homeLink').on('click', UI.initLoad);
-  $('#worskLink').on('click', UI.setWork);
+  $('#workLink').on('click', UI.setWork);
   $('#projectsLink').on('click', UI.setProjects);
-
+  $('#trainingLink').on('click', UI.setTrainings);
 }) /// End of Window onload **************************
 
 
@@ -14,14 +14,35 @@ $(function(){
 // UI object, put all functions that affect the DOM
 var UI = {
   initLoad: function() {
-    // hide some elements
+    $('#aboutMe').children().show();
+    $('#trainings').children().hide();
     $('#projects').children().hide();
+    $('#workExperience').children().hide();
+  },
+
+  setTrainings: function(){
+    console.log('show project accordion');
+    $('#aboutMe').children().hide();
+    $('#trainings').children().show();
+    $('#projects').children().hide();
+    $('#workExperience').children().hide();
   },
 
   setProjects: function(){
     console.log('show project accordion');
+    $('#aboutMe').children().hide();
+    $('#trainings').children().hide();
     $('#projects').children().show();
+    $('#workExperience').children().hide();
+  },
+
+  setWork: function() {
+    $('#aboutMe').children().hide();
+    $('#trainings').children().hide();
+    $('#projects').children().hide();
+    $('#workExperience').children().show();
   }
+
 } // END OF UI
 
 
